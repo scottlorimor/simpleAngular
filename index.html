@@ -12,9 +12,9 @@
 		<ul ng-repeat="friend in friends">
 			<li>{{friend}}</li>
 		</ul>
-		<div class="input-group">
-			<input type="text" class="form-control" placeholder="Friends name..."><span class="input-group-btn"><button class="btn btn-primary">Add Friend</button></span>
-		</div>
+		<form>
+			<input type="text" ng-model="newFriend" class="form-control" placeholder="Friends name..."><span class="input-group-btn"><button ng-click="addFriend(newFriend)" class="btn btn-primary">Add Friend</button></span>
+		</form>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
 	<script src="JS/app.js"></script>
