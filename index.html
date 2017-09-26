@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Intro App</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body ng-App="friendsList">
+	<div ng-Controller="mainCtrl" class="col-md-2">
+		<h1>Friends List:</h1>
+		<ul ng-repeat="friend in friends">
+			<li>{{friend}}</li>
+		</ul>
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Friends name..."><span class="input-group-btn"><button class="btn btn-primary">Add Friend</button></span>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+	<script src="JS/app.js"></script>
+	<script src="JS/mainCtrl.js"></script>
+</body>
+</html>
